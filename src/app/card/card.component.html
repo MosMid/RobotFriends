@@ -1,0 +1,6 @@
+<div class="card" id="{{friend.id}}" (click)="onSelect()">
+    <div class="like" id="{{friend.id}}" [style.color]="friend.isFavorite? '#DC117E': 'grey'" (click)="onClick($event)"><i id="{{friend.id}}" class="fa-solid fa-heart"></i></div>
+    <div ></div>
+    <img class="photo" src="https://robohash.org/{{friend.id}}" alt="">
+    {{friend.name}} <br> {{friend.email }}
+</div>

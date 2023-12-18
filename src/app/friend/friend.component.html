@@ -1,0 +1,19 @@
+<div class="friend">
+    <div class="avatar">
+        <div class="tof"></div>
+        <div class="identity">
+            <div class="friendName">{{friendProfile?.name| json}}</div><br>
+            Email: {{friendProfile?.email | json}} <br><br>
+            Phone: {{friendProfile?.phone| json}} <br><br>
+            <button><i class="fa-solid fa-heart"></i> Make favorite</button>
+        </div>
+    </div>
+    <h3>More details</h3>
+    <p>Adress</p>
+    <div class="address">
+        <div>Street <br><span>{{friendProfile?.address?.street| json}}</span></div>
+        <div>Suite <br><span>{{friendProfile?.address?.suite| json}}</span></div>
+        <div>City <br><span>{{friendProfile?.address?.city| json}}</span></div>
+    </div>
+    <p>Company <br><span>{{friendProfile?.company?.name| json}}</span></p>
+</div>

@@ -1,0 +1,8 @@
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(83, 83, 83);
+}
+
+html:hover{
+    transform: scale(1.02);
+}

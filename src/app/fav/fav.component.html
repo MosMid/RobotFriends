@@ -1,0 +1,6 @@
+<div class="fav">
+    <input [ngModel]="searchQuery" placeholder="Search a friend" (ngModelChange)="onSearch($event)" />
+    <div class="cards">
+        <app-card id="{{friend.id}}" *ngFor="let friend of friends" [friend]="friend" (cardEvent)="handleCardEvent($event)"></app-card>
+    </div>
+</div>

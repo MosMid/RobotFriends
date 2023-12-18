@@ -1,0 +1,10 @@
+<div class="home">
+    <input [ngModel]="searchQuery" placeholder="Search a friend" (ngModelChange)="onSearch($event)" />
+    <h3 id="filterBy">Filter by city</h3>
+    <div class="filter">
+        <div class="city" *ngFor="let city of cities" (click)="onClick($event)" [style]="{'background-color': clickedCity == city ? '#DC117E' : 'white', 'color': clickedCity == city ? 'white' : 'black'}">{{city}}</div>
+    </div>
+    <div class="cards">
+        <app-card *ngFor="let friend of friends" [friend]="friend"></app-card>
+    </div>
+</div>
